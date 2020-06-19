@@ -1,0 +1,110 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap";
+
+:root {
+    --bgHeader: #272121;
+    --bgBody: #363333;
+    --orange: #e16328;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: var(--bgBody);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+header {
+    background-color: var(--bgHeader);
+    
+    padding: 30px;
+    border-bottom: 1px solid var(--orange);
+}
+
+header .links {
+    text-align: center;
+}
+
+header .links a {
+    color: white;
+    font-weight: 530;
+    
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+header .links a:hover {
+    color: var(--orange);
+    transition: color 200ms;
+}
+
+.wrapper {
+    text-align: center;
+    padding-top: 32px;
+}
+
+.wrapper h1 {
+    font-size: 1.3em;
+    /* font-size: 1em; */
+}
+
+.cards {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 14px;
+}
+
+.card {
+    text-align: center;
+    background-color: var(--bgBody);
+    filter: brightness(90%);
+    border-radius: 8px;
+}
+
+.card:hover {
+    border: 1.5px solid var(--orange);
+    transition: border-width 150ms;
+}
+
+.card .card_info {
+    font-size: 0.8em;
+    text-align: center;
+    padding: 14px;
+
+    background-color: var(--bgHeader);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.card_info p {
+    padding: 8px;
+}
+
+.cardprice{
+    background-color: var(--orange);
+    filter: brightness(85%);
+    border-radius: 25px;
+}
+
+@media (max-width: 800px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 580px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,90 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+header {
+    padding: 36px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#links {
+    margin: auto 0;
+    font-size: 16px;
+}
+
+#links a {
+    padding-left: 30px;
+}
+
+.banner {
+    background: url(../assets/chef.png) no-repeat;
+    background-position: 85% 100%;
+    background-color: #FBDFDB;
+    height: 366px;
+    padding: 60px;
+    border: #dac0bc solid 2px;
+    border-radius: 20px;
+}
+
+#description {
+    width: 305px;
+}
+
+#description p {
+    opacity: 70%;
+    padding-top: 10px;
+}
+
+.most-accessed {
+    width: 940px;
+    padding-top: 50px;
+}
+
+.recipes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding-top: 20px;
+}
+
+.recipes-grid img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.recipe .info {
+    padding-top: 20px;
+}
+
+.recipe .info span {
+    color: #777;
+}
+
+footer {
+    background-color: #EEE;
+    margin-top: 50px;
+    text-align: center;
+    padding: 26px;
+    color: #999
+}
+
+
+
